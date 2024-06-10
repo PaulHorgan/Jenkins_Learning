@@ -5,7 +5,7 @@ pipeline {
         stage ('Make folders and files') {
             steps { 
                 bat '''
-            mkdir testingPipeline
+           
 
         '''
             }
