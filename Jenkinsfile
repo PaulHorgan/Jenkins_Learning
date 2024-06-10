@@ -6,15 +6,13 @@ pipeline {
             steps { 
                 bat '''
             mkdir testingPipeline
-            echo "hi there" > testingPipeline\text.txt
+
         '''
             }
         }
         stage ('View') {
             steps {
-                bat '''
-                type testingPipeline\text.txt           
-            '''               
+              
             }
         }
         stage ('Run') {
