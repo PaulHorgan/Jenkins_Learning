@@ -3,7 +3,7 @@ pipeline {
         stages {
             stage ('Make folders and files') {
                 steps { 
-                    bat "echo 'echo  hello' >  script.bat"
+                    bat "echo echo hello >  script.bat"
                 }
             }
             // stage ('View') {
