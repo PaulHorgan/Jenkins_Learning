@@ -3,17 +3,17 @@ pipeline {
         stages {
             stage ('Make folders and files') {
                 steps { 
-                    bat "touch ~/script.bat"
+                    bat "echo 'echo  hello' >  ~/script.bat"
                 }
             }
-            stage ('View') {
-                steps {  
-                    bat "touch ~/script2.bat"
-                }
-            }
+            // stage ('View') {
+            //     steps {  
+            //         bat "echo ~/script2.bat"
+            //     }
+            // }
             stage ('Run') {
                 steps {
-                    bat"script.bat"
+                    bat "script.bat"
                 }
             }
         }
