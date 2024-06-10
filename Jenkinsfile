@@ -4,10 +4,8 @@ pipeline {
         stages {
         stage ('Make folders and files') {
             steps { 
-                bat '''
-           
-
-        '''
+                
+           sh "touch ~/script.bat"
             }
         }
         stage ('View') {
