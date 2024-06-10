@@ -13,7 +13,7 @@ pipeline {
             }
             stage ('Run') {
                 steps {
-                    bat"'script.bat"
+                    bat"script.bat"
                 }
             }
         }
