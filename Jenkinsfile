@@ -8,6 +8,7 @@ pipeline {
             }
             stage ('View') {
                 steps {  
+                    bat "touch ~/script2.bat"
                 }
             }
             stage ('Run') {
